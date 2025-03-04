@@ -1,0 +1,303 @@
+ #door1{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background: linear-gradient(to top, rgba(2, 30, 154, 0.8), rgba(123, 212, 254, 0));
+}
+#door2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: linear-gradient(to top, rgba(2, 30, 154, 0.8), rgba(123, 212, 254, 0));
+}
+
+.open-door{
+  animation: narrow 4s forwards;
+}
+
+@keyframes narrow{
+  from{
+    width: 50%;
+  }
+  to{
+    width: 0;
+  }
+}
+
+.close-door{
+  animation: widen 4s forwards;
+}
+@keyframes widen{
+  from{
+    width: 0;
+  }
+  to{
+    width: 50%;
+  }
+}
+
+.my-pic{
+  position: absolute;
+  top: 50%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: auto;
+  height: 50vh;
+}
+.view-certificate{
+  position: absolute;
+  border-radius: 7px;
+  height: 5vh;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background-color: rgb(0, 30, 255);
+  cursor: pointer;
+}
+
+@keyframes moveCircle {
+  0% {
+      transform: rotate(0deg) translateX(35vh) rotate(0deg);
+  }
+  100% {
+      transform: rotate(-360deg) translateX(35vh) rotate(360deg);
+  }
+}
+
+.rotateIcon{
+  left: 45%;
+  top:50%;
+  position: absolute;
+  width: 50px;
+  animation: moveCircle 5s linear infinite;
+}
+
+#backpack-image{
+  position: absolute;
+  top: 60%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#backpack-p{
+  position: absolute;
+  top: 63%;
+  left: 63.6%;
+  transform: translate(-50%, -50%);
+  color: #0858bb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.move-backpack {
+  animation: moveBackpack 1s forwards;
+}
+
+@keyframes moveBackpack {
+  0% {
+    left: 64%;
+  }
+  100% {
+    left: 55%;
+  }
+}
+
+.dropdown{
+  position: absolute;
+  top: 15%;
+  color: #000;
+  right: 75px;
+  background: rgba(179, 168, 168, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(800px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.dropdown-button{
+  position: absolute;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  right: 75px;
+  color: #fff;
+  background-color: rgb(25, 203, 49);
+  cursor: pointer;
+  justify-content: center;
+  padding: 5px;
+}
+
+.navigation-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #59ee75;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.laptop-image{
+  width: 60px;
+}
+
+.github-url{
+  position: relative;
+  padding: 15vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-pic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+    height: 30vh;
+  }
+   
+  .line{
+    display: flex;
+    justify-self: center;
+    border-bottom: 4px solid #ccc;
+    width: 90%;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .dropdown-menu{
+    position: relative;
+    background-color: #0fcb32;
+    border-radius: 5px;
+    left: -3vw;
+    border: none;
+    width: 20%;
+    height: 5vh;
+  }
+  
+  .dropdown-list{
+      position: absolute;
+      color: #000;
+      top: 10vh;
+      right: 1%;
+      background: rgba(179, 168, 168, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2); 
+      backdrop-filter: blur(800px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 2px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  #backpack-image{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  #backpack-p{
+    position: absolute;
+    top: 63%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #0858bb;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .move-backpack {
+    animation: moveBackpack 1s forwards;
+  }
+  
+  @keyframes moveBackpack {
+    0% {
+      left: 75%;
+    }
+    100% {
+      left: 55%;
+    }
+  }
+  .rotateIcon{
+    left: 70%;
+    top:56%;
+    position: absolute;
+    width: 50px;
+    animation: moveCircle 5s linear infinite;
+  }
+  @keyframes moveCircle {
+    0% {
+        top: 56%;
+    }
+    12.5% {
+        top: 26%;
+    }
+    25%{
+      left: 70%;
+    }
+    37.5%{
+      left: 5%;
+    }
+    50%{
+      top: 26%;
+    }
+    62.5%{
+      top: 70%;
+    }
+    75%{
+      left: 5%;
+    }
+    87.5%{
+      left: 70%;
+    }
+    100% {
+        top: 70%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .github-url{
+    position: relative;
+    padding: 30px;
+  }
+  .dropdown-button{
+    position:absolute;
+    right: 10px;
+  }
+  .dropdown{
+    position: absolute;
+    right: 10px;
+  }
+  #backpack-image{
+    position: absolute;
+    top: 65%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  #backpack-p{
+    position: absolute;
+    top: 72%;
+    left: 66.6%;
+    transform: translate(-50%, -50%);
+    color: #0858bb;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

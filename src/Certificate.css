@@ -1,0 +1,53 @@
+.certificate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.backbutton{
+    position: absolute;
+    background-color: rgb(25, 203, 49);
+    border-radius: 8px;
+    right: 5px;
+    cursor: pointer;
+    color: white  ;
+    
+    border: none;
+    padding: 10px;
+}
+
+.fade-out {
+    opacity: 0.04;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  .fade-out.visible {
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .certificate{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .certificate-img{
+      width: 90%;
+      height: auto;
+    }
+    .backbutton{
+      position: relative;
+      left: -1vw;
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 1024px){
+    .certificate-img{
+      position: absolute;
+      width: auto;
+      height: 70vh;
+      top: 12vh;
+    }
+  }
