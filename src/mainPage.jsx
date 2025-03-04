@@ -123,22 +123,22 @@ function MainPage() {
     </div>
       {iconVisible ?(
         <div>
-          <img id='skill1' src="../icons/html5.png" alt='HTML5'/>
-          <img id='skill2' src='../icons/css3.png' alt='CSS3'/>
-          <img id='skill3' src='../icons/javascript.png' alt='JavaScript'/>
-          <img id='skill4' src='../icons/react.png' alt='React'/>
-          <img id='skill5' src='../icons/node.js.png' alt='Node.js'/>
-          <img id='skill6' src='../icons/mongodb.png' alt='MongoDB'/>
-          <img id='skill7' src='../icons/docker.png' alt='Docker'/>
-          <img id='skill8' src='../icons/kubernetes.png' alt='Kubernetes'/>
-          <img id='skill9' src='../icons/microservices.png' alt='Microservises'/>
-          <img id='skill10' src='../icons/github.png' alt='GitHub'/>
+          <img id='skill1' src="./icons/html5.png" alt='HTML5'/>
+          <img id='skill2' src='./icons/css3.png' alt='CSS3'/>
+          <img id='skill3' src='./icons/javascript.png' alt='JavaScript'/>
+          <img id='skill4' src='./icons/react.png' alt='React'/>
+          <img id='skill5' src='./icons/node.js.png' alt='Node.js'/>
+          <img id='skill6' src='./icons/mongodb.png' alt='MongoDB'/>
+          <img id='skill7' src='./icons/docker.png' alt='Docker'/>
+          <img id='skill8' src='./icons/kubernetes.png' alt='Kubernetes'/>
+          <img id='skill9' src='./icons/microservices.png' alt='Microservises'/>
+          <img id='skill10' src='./icons/github.png' alt='GitHub'/>
         </div>
         ) : ( <></>)
       }
       {showbackpack ? (
         <>
-        <img id='backpack-image' src="../icons/backpack.png" onClick={showSkills}/>
+        <img id='backpack-image' src="icons/backpack.png" onClick={showSkills}/>
         <p id='backpack-p' onClick={showSkills}>View Skills</p>
         <nav className='navigation-bar'>
     <img src="../icons/laptop-100.png" alt="laptop" className='laptop-image'/>

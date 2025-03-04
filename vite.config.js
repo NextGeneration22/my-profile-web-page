@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react';
 //   plugins: [react()],
 // })
 export default defineConfig({
-  base: "/my-profile-web-page",
+  //base: "/my-profile-web-page",
   plugins: [react()],
   server: { port: 5173, // Specify the desired port here 
   open: true, // Optional: Opens the browser automatically 
