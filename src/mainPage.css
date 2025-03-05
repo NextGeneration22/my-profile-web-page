@@ -155,7 +155,7 @@
 
 .github-url{
   position: relative;
-  padding: 15vw;
+  margin-left: 15vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -183,7 +183,10 @@
     position: relative;
     background-color: #0fcb32;
     border-radius: 5px;
-    left: -3vw;
+    right: 4px;
+    margin-left: 120px;
+    margin-right: 0px;
+    cursor: pointer;
     border: none;
     width: 20%;
     height: 5vh;
@@ -277,7 +280,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .github-url{
     position: relative;
-    padding: 30px;
+    margin-left: 35px;
   }
   .dropdown-button{
     position:absolute;
