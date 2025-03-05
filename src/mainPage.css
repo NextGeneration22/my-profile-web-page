@@ -202,6 +202,10 @@
       padding: 2px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+   .dropdown-h5{
+    cursor: pointer;
+   }
+
   #backpack-image{
     position: absolute;
     top: 60%;
