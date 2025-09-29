@@ -1,14 +1,10 @@
 import './Certificate.css';
 
 
-function Certificate({classList, closeDoor}) {
+function Certificate({toggleCertificate}) {
   return (
-    <div className={`certificate ${classList}`}>
-      <nav className='navigation-bar'>
-        <img src="./icons/laptop-100.png" alt="laptop" className='laptop-image'/>
-        <h3>Full-Stack JavaScript Developer</h3>
-        <button className='backbutton' onClick={closeDoor}>back</button>
-      </nav>
+    <div className='certificate-container'>
+      <button className='backbutton' onClick={toggleCertificate}>X</button>
       <img src="./images/certificate.png" alt="certificate" className='certificate-img'></img>
     </div>
   );

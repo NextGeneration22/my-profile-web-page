@@ -1,0 +1,52 @@
+/* /// right-half */
+
+.right-half {
+            width: 40vw;
+            height: 55vh;
+            display: flex;
+            float: left;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 25vw;
+            top: -6vh;
+        }
+
+        
+/* Laptop */
+.laptop {
+    position: relative;
+}
+
+.laptop-screen {
+    width: 40vw;
+    height: 55vh;
+    background: #0d1117;
+    border: 8px solid #2c3e50;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+/* Code animation */
+.code-container {
+    padding: 15px;
+    height: 100%;
+    color: #58a6ff;
+    font-size: 12px;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+.function{color: #e6eb52; }
+.equalSign{color: #fff; }
+.console {color: #16d6e7; }
+.string{ color: rgb(241, 84, 84); }
+
+.output {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(184, 162, 162, 0.3);
+}

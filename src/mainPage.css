@@ -1,164 +1,92 @@
- #door1{
+.navigation{
+  position: fixed;
+}
+
+.motto{
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  background: linear-gradient(to top, rgba(2, 30, 154, 0.8), rgba(123, 212, 254, 0));
-}
-#door2{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  background: linear-gradient(to top, rgba(2, 30, 154, 0.8), rgba(123, 212, 254, 0));
-}
-
-.open-door{
-  animation: narrow 4s forwards;
-}
-
-@keyframes narrow{
-  from{
-    width: 50%;
-  }
-  to{
-    width: 0;
-  }
-}
-
-.close-door{
-  animation: widen 4s forwards;
-}
-@keyframes widen{
-  from{
-    width: 0;
-  }
-  to{
-    width: 50%;
-  }
-}
-
-.my-pic{
-  position: absolute;
-  top: 50%;
-  left: 87%;
-  transform: translate(-50%, -50%);
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2vw;
+  width: 60vw;
   text-align: center;
-  width: auto;
-  height: 50vh;
-}
-.view-certificate{
-  position: absolute;
-  border-radius: 7px;
-  height: 5vh;
-  top: 50%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  background-color: rgb(0, 30, 255);
-  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 5px 5px 8px rgba(80, 75, 75, 0.5);
 }
 
-@keyframes moveCircle {
-  0% {
-      transform: rotate(0deg) translateX(35vh) rotate(0deg);
-  }
-  100% {
-      transform: rotate(-360deg) translateX(35vh) rotate(360deg);
-  }
+.landing-section {
+  position: relative;
+  left: -1vw;
+  top: 8vh;
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  animation: gradientShift 10s ease infinite;
 }
 
-.rotateIcon{
-  left: 45%;
-  top:50%;
-  position: absolute;
-  width: 50px;
-  animation: moveCircle 5s linear infinite;
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-#backpack-image{
-  position: absolute;
-  top: 60%;
-  left: 64%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
+/* about-section */
+.about{
+    margin-top: 15vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#backpack-p{
-  position: absolute;
-  top: 63%;
-  left: 63.6%;
-  transform: translate(-50%, -50%);
-  color: #0858bb;
-  cursor: pointer;
-  text-decoration: underline;
-}
 
-.move-backpack {
-  animation: moveBackpack 1s forwards;
-}
-
-@keyframes moveBackpack {
-  0% {
-    left: 64%;
-  }
-  100% {
-    left: 55%;
-  }
-}
-
-.dropdown{
-  position: absolute;
-  top: 15%;
-  color: #000;
-  right: 75px;
-  background: rgba(179, 168, 168, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2); 
-  backdrop-filter: blur(800px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-}
-.dropdown-button{
-  position: absolute;
-  border-radius: 5px;
-  border: none;
-  width: 150px;
-  right: 75px;
-  color: #fff;
-  background-color: rgb(25, 203, 49);
-  cursor: pointer;
-  justify-content: center;
-  padding: 5px;
-}
-
-.navigation-bar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10vh;
-  background-color: #59ee75;
-  color: #fff;
+.tools-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+  padding: 3vw;
+}
+
+.tool {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 35vw ;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+}
+
+.about-the-creator{
+  margin-top: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.laptop-image{
-  width: 60px;
+.about-creator-description{
+  margin-top: 1vh;
+  padding: 0 5vw;
+  text-align: justify;
+  color: #333;
 }
 
-.github-url{
-  position: relative;
-  margin-left: 15vw;
+.certificat-link{
+  color: #1e3a8a;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .my-pic{
     position: absolute;
     top: 50%;
@@ -307,4 +235,4 @@
     cursor: pointer;
     text-decoration: underline;
   }
-}
+} */

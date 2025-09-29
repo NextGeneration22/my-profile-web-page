@@ -1,62 +1,33 @@
-.certificate{
+.certificate-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(171, 173, 193, 0.7); /* Semi-transparent dark overlay */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    z-index: 9999; /* On top of everything */
 }
-.backbutton{
+
+.certificate-img {
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.backbutton {
     position: absolute;
-    background-color: rgb(25, 203, 49);
+    top: 30px;
+    right: 40px;
     border-radius: 8px;
-    right: 5px;
     cursor: pointer;
-    color: white  ;
-    
+    color: #fff;
+    background: #1e3a8a;
     border: none;
-    padding: 10px;
+    padding: 10px 16px;
+    font-size: 1.5rem;
+    z-index: 10000;
 }
-
-.fade-out {
-    opacity: 0.04;
-    transition: opacity 1.5s ease-in-out;
-  }
-  
-  .fade-out.visible {
-    opacity: 1;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .certificate{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-    }
-    .certificate-img{
-      width: 90%;
-      height: auto;
-    }
-    .backbutton{
-      position: relative;
-      background-color: rgb(25, 203, 49);
-      border-radius: 8px;
-      right: 3px;
-      margin-left: 170px;
-      margin-right: 0px;
-      cursor: pointer;
-      color: white  ;
-      
-      border: none;
-      padding: 10px;
-    }
-  }
-  @media only screen and (min-width: 769px) and (max-width: 1024px){
-    .certificate-img{
-      position: absolute;
-      width: auto;
-      height: 70vh;
-      top: 12vh;
-    }
-  }

@@ -1,0 +1,51 @@
+.nav-bar{
+    /* position: absolute; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0f172a;
+    width: 100vw;
+    height: 10vh;
+}
+
+.web-logo{
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.main-title{
+    color: rgb(58, 172, 234);
+    position: absolute;
+    left: 7vw;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+.navi-items{
+    font-size: 0.5rem;
+    display: flex;
+    gap: 60px;
+    color: white;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    height: 10vh;
+}
+
+.navi-items h1:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: gray;
+}

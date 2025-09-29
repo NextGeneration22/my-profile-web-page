@@ -1,0 +1,45 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 10vh;
+    left: -10px;
+    bottom: -10px;
+    width: 100vw;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.contct-title{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 5px;}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.linkedin-logo{
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.github-logo{
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
